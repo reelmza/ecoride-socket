@@ -7,9 +7,10 @@ const io = new Server(httpServer, {
   /* options */
   cors: {
     origin: [
+      "http://localhost",
       "http://localhost:8100",
-      "https://admin.socket.io",
       "http://192.168.8.80:8100",
+      "https://admin.socket.io",
     ],
     credentials: true,
   },
