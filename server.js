@@ -9,7 +9,7 @@ const io = new Server(httpServer, {
     origin: [
       "http://localhost",
       "http://localhost:8100",
-      "http://192.168.8.80:10000",
+      "http://192.168.8.80:8100",
       "https://admin.socket.io",
     ],
     credentials: true,
