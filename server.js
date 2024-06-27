@@ -1,6 +1,6 @@
-const { createServer } = require("http");
-const { Server } = require("socket.io");
-const { instrument } = require("@socket.io/admin-ui");
+import { createServer } from "http";
+import { Server } from "socket.io";
+import { instrument } from "@socket.io/admin-ui";
 
 const httpServer = createServer();
 const io = new Server(httpServer, {
@@ -9,7 +9,7 @@ const io = new Server(httpServer, {
     origin: [
       "http://localhost",
       "http://localhost:8100",
-      "http://192.168.8.80:8100",
+      "http://192.168.8.80:10000",
       "https://admin.socket.io",
     ],
     credentials: true,
