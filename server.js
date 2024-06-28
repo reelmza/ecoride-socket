@@ -7,11 +7,12 @@ const io = new Server(httpServer, {
   /* options */
   cors: {
     origin: [
-      "http://localhost", //sfs
-      "capacitor://localhost", //sdfsd
-      "http://localhost:8100", //dsgs
-      "http://192.168.8.80:8100", //sdgs
-      "https://admin.socket.io", //dsgsd
+      "http://localhost",
+      "https://localhost",
+      "capacitor://localhost",
+      "http://localhost:8100",
+      "http://192.168.8.80:8100",
+      "https://admin.socket.io",
     ],
     credentials: true,
   },
