@@ -63,6 +63,16 @@ io.on("connection", (socket) => {
     }
   );
 
+  // Emit new car latLng
+  socket.on(`car_latLng`, (params) => {
+    console.log("New car lat lng");
+    console.log(params?.passengerID);
+    io.to(`trip_room:${params?.passengerID}`).emit(
+      `car_latLng`,
+      params?.carLatLng
+    );
+  });
+
   // Remove ride offer from list
   socket.on(`remove_ride_offer`, (params) => {
     io.to(`drivers_room`).emit(`remove_ride_offer`, {
