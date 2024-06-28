@@ -7,10 +7,10 @@ const io = new Server(httpServer, {
   /* options */
   cors: {
     origin: [
-      "http://localhost", // android
-      "capacitor://localhost", // ios
-      "http://localhost:8100", // web browser local
-      "http://192.168.8.80:8100", // web browser local and on network
+      "http://localhost",
+      "capacitor://localhost",
+      "http://localhost:8100",
+      "http://192.168.8.80:8100",
       "https://admin.socket.io",
     ],
     credentials: true,
