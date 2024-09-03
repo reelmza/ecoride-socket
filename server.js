@@ -11,7 +11,7 @@ const io = new Server(httpServer, {
       "https://localhost", // Android
       "capacitor://localhost", // ios
       "http://localhost:8100", // web
-      "http://192.168.8.80:8100",
+      "http://192.168.8.133:8100",
       "https://admin.socket.io",
     ],
     credentials: true,
